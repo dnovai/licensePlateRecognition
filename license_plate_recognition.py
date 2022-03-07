@@ -46,7 +46,6 @@ while True:
 
         # Read the text on the license plate
         lpn = reader.readtext(plate_binary)
-        # cv2.imshow("License Plate", plate_binary)
 
         if len(lpn) != 0:
             _, _, confidence = lpn[0]
